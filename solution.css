@@ -202,3 +202,57 @@
     transform: rotate(0deg);
   }
 }
+
+/* ESERCIZIO 12 */
+
+
+.ex-12-button:hover .ex-12-top-white {
+  animation: uppermove 2s linear;
+}
+@keyframes uppermove {
+  0% {
+      left: 10%;
+  }
+  25% {
+      left: 60%;
+  }
+  50% {
+      left: calc(100% - 60px);
+  }
+  75% {
+      left: 60%;
+  }
+  100% {
+      left: 10%;
+  }
+}
+
+.ex-12-bottom-white {
+  position: absolute;
+  bottom: -10px;
+  right: 20%;
+  background: #f5f5f5;
+  width: 60px;
+  height: 20px;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: bottommove 2s linear;
+}
+@keyframes bottommove {
+  0% {
+      right: 20%;
+  }
+  25% {
+      right: 60%;
+  }
+  50% {
+      right: calc(100% - 60px);
+  }
+  75% {
+      right: 60%;
+  }
+  100% {
+      right: 20%;
+}
+}
