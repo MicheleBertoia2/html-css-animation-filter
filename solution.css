@@ -62,7 +62,16 @@
   width: 60px;
   height: 60px;
   background: red;
+  transform: scale(1);
   transition: all 2s;
+}
+
+.ex-5-square:hover {
+  transform: scale(2);
+}
+
+.ex-5-square:active {
+  transform: scale(0.5);
 }
 
 
@@ -106,4 +115,90 @@
 .ex-8-img:hover {
   filter: grayscale(0.8) saturate(3);
   border-radius: 20px;
+}
+
+/* ESERCIZIO 9  */
+
+.ex-9-img {
+  margin: 50px 100px;
+  width: 400px;
+  filter: grayscale(0) saturate(1);
+  border-radius: 0;
+  overflow: hidden;
+  transform: scale(1);
+  transition: all 1s;
+}
+
+.ex-9-img:hover {
+  filter: grayscale(0.8) saturate(3);
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+
+/* ESERCIZIO 10  */
+
+.ex-10-icon {
+  font-size: 60px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: rotate(0);
+}
+
+@keyframes spin {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ESERCIZIO 11  */
+
+.ex-11-icon {
+  font-size: 60px;
+  animation-name: spin-back;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: rotate(0);
+}
+
+@keyframes spin-back {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
